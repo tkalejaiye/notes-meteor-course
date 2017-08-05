@@ -22,13 +22,6 @@ if(Meteor.isClient) {
       expect(h1Text).toBe(title);
     });
 
-    it('should call the function', function() {
-      const spy = expect.createSpy();
-      spy();
-      spy("Tolu");
-      expect(spy).toHaveBeenCalledWith();
-    });
-
     it('should call handleLogout on click', function() {
       const spy = expect.createSpy();
       const wrapper = mount( <PrivateHeader title="Title" handleLogout={spy}/>);
@@ -36,5 +29,6 @@ if(Meteor.isClient) {
       wrapper.find('button').simulate('click');
       expect(spy).toHaveBeenCalled();
     });
+
   });
 }
