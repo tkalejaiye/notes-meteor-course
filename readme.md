@@ -9,6 +9,7 @@ This app requires you to have Meteor installed on your machine. Then, clone the 
 
 ```
 meteor npm install
+```
 
 ```
 meteor
