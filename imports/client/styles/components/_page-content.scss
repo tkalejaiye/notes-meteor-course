@@ -2,13 +2,14 @@
 	display: flex;
 	max-width: $site-max-width;
 	margin: 0 auto;
-	padding: $space;
+	padding: $large-space $space;
 	height: $page-content-height;
 }
 
 .page-content__sidebar {
 	width: $page-content-sidebar-width;
 	display: flex;
+	padding-right: $large-space;
 }
 
 .page-content__main {
