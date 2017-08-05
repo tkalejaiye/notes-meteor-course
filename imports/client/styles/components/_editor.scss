@@ -9,7 +9,6 @@
 
 .editor__title {
   border: none;
-  border-bottom: 2px solid $grey;
   font-size: $large-font-size;
   margin-bottom: $large-space;
   outline: none;
@@ -25,6 +24,7 @@
   resize: none;
   border: none;
   color: #707070;
+  font-size: 1.6rem;
 }
 
 .editor__message {

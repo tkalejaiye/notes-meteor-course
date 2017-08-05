@@ -2,23 +2,27 @@
 	display: flex;
 	max-width: $site-max-width;
 	margin: 0 auto;
-	padding: $large-space $space;
 	height: $page-content-height;
+	@include desktop {
+	padding: $large-space $space;
+
+	}
 }
 
 .page-content__sidebar {
 	width: $page-content-sidebar-width;
-	display: flex;
+	display: none;
 	padding-right: $large-space;
-}
-
-@media (max-width: 50rem) {
-	.page-content__sidebar * {
-		color: red;
+	@include desktop {
+			display: flex;
 	}
 }
 
 .page-content__main {
-	width: $page-content-main-width;
 	display: flex;
+	width: 100%;
+	@include desktop {
+		width: $page-content-main-width;
+
+	}
 }
