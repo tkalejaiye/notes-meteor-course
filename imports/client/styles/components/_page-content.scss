@@ -12,6 +12,12 @@
 	padding-right: $large-space;
 }
 
+@media (max-width: 50rem) {
+	.page-content__sidebar * {
+		color: red;
+	}
+}
+
 .page-content__main {
 	width: $page-content-main-width;
 	display: flex;
